@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="49.417913">
+<testcase classname="" name="Searching House in Sunnyvale City" time="24.705145">
+<system-out><![CDATA[Given Launched the browser and enter Url....................................passed
+When User send "Sunnyvale" in Search Box and Enter..........................passed
+Then Pop-up Displays and User select Sunnyvale CA,USA.......................passed
+And User verify the serchbox................................................passed
+Then User Select the minium price button....................................passed
+And User Slect  min_price...................................................passed
+Then User select Maximum price button.......................................passed
+And User Select max_price...................................................passed
+Then User Quit the Browser..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="" name="Searching House in Sunnyvale City 2" time="24.712768">
+<system-out><![CDATA[Given Launched the browser and enter Url....................................passed
+When User send "Dallas" in Search Box and Enter.............................passed
+Then Pop-up Displays and User select Sunnyvale CA,USA.......................passed
+And User verify the serchbox................................................passed
+Then User Select the minium price button....................................passed
+And User Slect  min_price...................................................passed
+Then User select Maximum price button.......................................passed
+And User Select max_price...................................................passed
+Then User Quit the Browser..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

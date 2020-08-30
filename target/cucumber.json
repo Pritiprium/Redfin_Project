@@ -1,0 +1,278 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 16,
+        "name": "Searching House in Sunnyvale City",
+        "description": "",
+        "id": ";searching-house-in-sunnyvale-city;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11757926300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Launched the browser and enter Url",
+            "match": {
+              "location": "Automation_Steps.launched_the_browser_and_enter_Url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2562389500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User send \"Sunnyvale\" in Search Box and Enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunnyvale",
+                  "offset": 11
+                }
+              ],
+              "location": "Automation_Steps.user_send_in_Search_Box_and_Enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3033217000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Pop-up Displays and User select Sunnyvale CA,USA",
+            "match": {
+              "location": "Automation_Steps.pop_up_Displays_and_User_select_Sunnyvale_CA_USA()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5902445900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User verify the serchbox",
+            "match": {
+              "location": "Automation_Steps.user_verify_the_serchbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 226361000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Select the minium price button",
+            "match": {
+              "location": "Automation_Steps.user_Select_the_minium_price_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 228828000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Slect  min_price",
+            "match": {
+              "location": "Automation_Steps.user_Slect_min_price()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153145000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User select Maximum price button",
+            "match": {
+              "location": "Automation_Steps.user_select_Maximum_price_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109523100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Select max_price",
+            "match": {
+              "location": "Automation_Steps.user_Select_max_price()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 731309400,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 11,
+                "value": "#And User verify the house is displayed in the range"
+              }
+            ],
+            "line": 12,
+            "name": "User Quit the Browser",
+            "match": {
+              "location": "Automation_Steps.user_Quit_the_Browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Searching House in Sunnyvale City",
+        "description": "",
+        "id": ";searching-house-in-sunnyvale-city;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12269333200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Launched the browser and enter Url",
+            "match": {
+              "location": "Automation_Steps.launched_the_browser_and_enter_Url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2358099600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User send \"Dallas\" in Search Box and Enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dallas",
+                  "offset": 11
+                }
+              ],
+              "location": "Automation_Steps.user_send_in_Search_Box_and_Enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5179855100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Pop-up Displays and User select Sunnyvale CA,USA",
+            "match": {
+              "location": "Automation_Steps.pop_up_Displays_and_User_select_Sunnyvale_CA_USA()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3261049300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User verify the serchbox",
+            "match": {
+              "location": "Automation_Steps.user_verify_the_serchbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 361475900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Select the minium price button",
+            "match": {
+              "location": "Automation_Steps.user_Select_the_minium_price_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 204168900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Slect  min_price",
+            "match": {
+              "location": "Automation_Steps.user_Slect_min_price()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138853800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User select Maximum price button",
+            "match": {
+              "location": "Automation_Steps.user_select_Maximum_price_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109262800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Select max_price",
+            "match": {
+              "location": "Automation_Steps.user_Select_max_price()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 830669300,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 11,
+                "value": "#And User verify the house is displayed in the range"
+              }
+            ],
+            "line": 12,
+            "name": "User Quit the Browser",
+            "match": {
+              "location": "Automation_Steps.user_Quit_the_Browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "Feature/redFin.feature"
+  }
+]
