@@ -45,12 +45,19 @@ public class Automation_Steps {
 		page_OB.click_on_minium_Price_button();
 	}
 
-	@Then("^User Slect  min_price$")
-	public void user_Slect_min_price() throws Throwable {
+//	@Then("^User Slect  min_price$")
+//	public void user_Slect_min_price() throws Throwable {
+//		Home_Page page_OB = new Home_Page(Test_Base.driver);
+//		page_OB.select_minium_price();
+//
+//	}
+	
+	@Then("^User Slect  \"([^\"]*)\"$")
+	public void user_Slect(String arg1) throws Throwable {
 		Home_Page page_OB = new Home_Page(Test_Base.driver);
-		page_OB.select_minium_price();
-
+		page_OB.select_minium_price(arg1);
 	}
+
 
 	@Then("^User select Maximum price button$")
 	public void user_select_Maximum_price_button() throws Throwable {
@@ -58,22 +65,37 @@ public class Automation_Steps {
 		page_OB.click_maximum_Price_button();
 
 	}
-
-	@Then("^User Select max_price$")
-	public void user_Select_max_price() throws Throwable {
+	@Then("^User Select \"([^\"]*)\"$")
+	public void user_Select(String arg1) throws Throwable {
 		Home_Page page_OB = new Home_Page(Test_Base.driver);
-		page_OB.click_maximum_Price_button();
+		page_OB.select_minium_price(arg1);
 	}
 
-	@Then("^User verify the house is displayed in the range$")
-	public void user_verify_the_house_is_displayed_in_the_range() throws Throwable {
-		Home_Page page_OB = new Home_Page(Test_Base.driver);
-		page_OB.House_one();
 
+//	@Then("^User Select max_price$")
+//	public void user_Select_max_price() throws Throwable {
+//		Home_Page page_OB = new Home_Page(Test_Base.driver);
+//		page_OB.click_maximum_Price_button();
+//	}
+
+//	@Then("^User verify the house is displayed in the range$")
+//	public void user_verify_the_house_is_displayed_in_the_range() throws Throwable {
+//		Home_Page page_OB = new Home_Page(Test_Base.driver);		
+//		page_OB.House_one();
+//
+//	}
+	@Then("^User verify the house is displayed in the range \"([^\"]*)\"$")
+	public void user_verify_the_house_is_displayed_in_the_range(String cityName) throws Throwable {
+		Home_Page page_OB = new Home_Page(Test_Base.driver);
+		page_OB.House_one(cityName);
 	}
+
 
 	@Then("^User Quit the Browser$")
 	public void user_Quit_the_Browser() throws Throwable {
 		Test_Base.tear_Down();
 	}
+	
+	
+	
 }

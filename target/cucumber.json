@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11757926300,
+              "duration": 12609123300,
               "status": "passed"
             },
             "line": 3,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 2562389500,
+              "duration": 2668023100,
               "status": "passed"
             },
             "line": 4,
@@ -45,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 3033217000,
+              "duration": 1736696300,
               "status": "passed"
             },
             "line": 5,
@@ -57,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 5902445900,
+              "duration": 6796770300,
               "status": "passed"
             },
             "line": 6,
@@ -69,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 226361000,
+              "duration": 676605900,
               "status": "passed"
             },
             "line": 7,
@@ -81,19 +81,28 @@
           },
           {
             "result": {
-              "duration": 228828000,
+              "duration": 114155500,
               "status": "passed"
             },
             "line": 8,
-            "name": "User Slect  min_price",
+            "name": "User Slect  \"800\"",
             "match": {
-              "location": "Automation_Steps.user_Slect_min_price()"
+              "arguments": [
+                {
+                  "val": "800",
+                  "offset": 13
+                }
+              ],
+              "location": "Automation_Steps.user_Slect(String)"
             },
+            "matchedColumns": [
+              1
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 153145000,
+              "duration": 165812700,
               "status": "passed"
             },
             "line": 9,
@@ -105,27 +114,51 @@
           },
           {
             "result": {
-              "duration": 109523100,
+              "duration": 1328100,
               "status": "passed"
             },
             "line": 10,
-            "name": "User Select max_price",
+            "name": "User Select \"950\"",
             "match": {
-              "location": "Automation_Steps.user_Select_max_price()"
+              "arguments": [
+                {
+                  "val": "950",
+                  "offset": 13
+                }
+              ],
+              "location": "Automation_Steps.user_Select(String)"
             },
+            "matchedColumns": [
+              2
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 731309400,
+              "duration": 2307240300,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 11,
-                "value": "#And User verify the house is displayed in the range"
-              }
+            "line": 11,
+            "name": "User verify the house is displayed in the range \"Sunnyvale\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunnyvale",
+                  "offset": 49
+                }
+              ],
+              "location": "Automation_Steps.user_verify_the_house_is_displayed_in_the_range(String)"
+            },
+            "matchedColumns": [
+              0
             ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 898104100,
+              "status": "passed"
+            },
             "line": 12,
             "name": "User Quit the Browser",
             "match": {
@@ -145,7 +178,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12269333200,
+              "duration": 13774053500,
               "status": "passed"
             },
             "line": 3,
@@ -157,7 +190,7 @@
           },
           {
             "result": {
-              "duration": 2358099600,
+              "duration": 2388141200,
               "status": "passed"
             },
             "line": 4,
@@ -178,7 +211,7 @@
           },
           {
             "result": {
-              "duration": 5179855100,
+              "duration": 2122148300,
               "status": "passed"
             },
             "line": 5,
@@ -190,7 +223,7 @@
           },
           {
             "result": {
-              "duration": 3261049300,
+              "duration": 6262005900,
               "status": "passed"
             },
             "line": 6,
@@ -202,7 +235,7 @@
           },
           {
             "result": {
-              "duration": 361475900,
+              "duration": 160612000,
               "status": "passed"
             },
             "line": 7,
@@ -214,19 +247,28 @@
           },
           {
             "result": {
-              "duration": 204168900,
+              "duration": 175265900,
               "status": "passed"
             },
             "line": 8,
-            "name": "User Slect  min_price",
+            "name": "User Slect  \"600\"",
             "match": {
-              "location": "Automation_Steps.user_Slect_min_price()"
+              "arguments": [
+                {
+                  "val": "600",
+                  "offset": 13
+                }
+              ],
+              "location": "Automation_Steps.user_Slect(String)"
             },
+            "matchedColumns": [
+              1
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 138853800,
+              "duration": 170916400,
               "status": "passed"
             },
             "line": 9,
@@ -238,27 +280,51 @@
           },
           {
             "result": {
-              "duration": 109262800,
+              "duration": 150002300,
               "status": "passed"
             },
             "line": 10,
-            "name": "User Select max_price",
+            "name": "User Select \"800\"",
             "match": {
-              "location": "Automation_Steps.user_Select_max_price()"
+              "arguments": [
+                {
+                  "val": "800",
+                  "offset": 13
+                }
+              ],
+              "location": "Automation_Steps.user_Select(String)"
             },
+            "matchedColumns": [
+              2
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 830669300,
+              "duration": 1754875300,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 11,
-                "value": "#And User verify the house is displayed in the range"
-              }
+            "line": 11,
+            "name": "User verify the house is displayed in the range \"Dallas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dallas",
+                  "offset": 49
+                }
+              ],
+              "location": "Automation_Steps.user_verify_the_house_is_displayed_in_the_range(String)"
+            },
+            "matchedColumns": [
+              0
             ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 839151300,
+              "status": "passed"
+            },
             "line": 12,
             "name": "User Quit the Browser",
             "match": {

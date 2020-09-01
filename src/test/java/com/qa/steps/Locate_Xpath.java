@@ -21,7 +21,7 @@ public class Locate_Xpath extends Test_Base {
 		WebElement searchbox = driver
 				.findElement(By.xpath("//input[@placeholder='City, Address, School, Agent, ZIP']"));
 		Browser_utility.wait_for_Element(searchbox);
-		searchbox.sendKeys("Sunnyvale");
+		searchbox.sendKeys("Dallas");
 		searchbox.sendKeys(Keys.ENTER);
 		Thread.sleep(3000);
 
@@ -36,7 +36,7 @@ public class Locate_Xpath extends Test_Base {
 		WebElement city = driver.findElement(By.xpath("//div[contains(@class,'textContent')]"));
 		Browser_utility.wait_for_Element(city);
 		String actual = city.getText();
-		Assert.assertEquals(actual, "Sunnyvale");
+		//Assert.assertEquals(actual, "Sunnyvale");
 		System.out.println(city.getText());
 		Thread.sleep(2000);
 		WebElement minm_price = driver.findElement(By.xpath("//span[contains(@class,'rangeItemContainer')][1]"));
@@ -66,26 +66,57 @@ public class Locate_Xpath extends Test_Base {
 		 WebElement price_950 = driver.findElement(By.xpath("//span[contains(text(),'$950k')]"));
 		 js.executeScript("arguments[0].click();", price_950);
 		Thread.sleep(3000);	
-		WebElement house_found1 = driver.findElement(By.xpath("//span[contains(text(),'215 Red Oak Dr Unit B, SUNNYVALE, CA 94086')]"));
-		Browser_utility.wait_for_Element(house_found1);		
-		System.out.println(house_found1.isDisplayed());
-		WebElement house_founs2 = driver.findElement(By.xpath("//span[contains(text(),'1271 Poplar Ave #404, SUNNYVALE, CA 94086')]"));
-		Browser_utility.wait_for_Element(house_founs2);
-		String actualHouse = house_founs2.getText();
-		Assert.assertEquals(actualHouse, "1271 Poplar Ave #404, SUNNYVALE, CA 94086" );
-		System.out.println(house_founs2.getText());
-		Thread.sleep(2000);
-		js.executeScript("scroll(0, 500)");
-		WebElement house_3 = driver.findElement(By.xpath("//span[contains(text(),'1907 Magdalena Cir #42, SANTA CLARA, CA 95051')]"));
-		Browser_utility.wait_for_Element(house_3);
-		String house3 = house_3.getText();
-		Assert.assertEquals(house3, "1907 Magdalena Cir #42, SANTA CLARA, CA 95051");
-		System.out.println(house_3.isDisplayed());
-		WebElement house_4 = driver.findElement(By.xpath("//span[contains(text(),'1269 Poplar Ave #309, Sunnyvale, CA 94086')]"));
-		Browser_utility.wait_for_Element(house_4);
-		String house4 = house_4.getText();
-		Assert.assertEquals(house4, "1269 Poplar Ave #309, Sunnyvale, CA 94086");
-		System.out.println(house_4.isDisplayed());
+		
+//		WebElement table = driver.findElement(By.xpath("//button[@class='ModeOption selected button-text']"));
+//		Browser_utility.wait_for_Element(table);
+//		table.click();
+//		Thread.sleep(2000);
+//		WebElement tableBody = driver.findElement(By.xpath("//*[contains(@class,'tableList')]"));
+//		Thread.sleep(2000);
+//		List <WebElement> header = tableBody.findElements(By.tagName("th"));
+//		//Browser_utility.List_Element(header);
+//		List<WebElement> rows = tableBody.findElements(By.tagName("tr"));
+//		//Browser_utility.List_Element(rows);
+//		List<WebElement> columns = tableBody.findElements(By.tagName("td"));
+//	//	Browser_utility.List_Element(columns);
+//		System.out.println(header.size());
+//		System.out.println(rows.size());
+//		System.out.println(columns.size());
+		
+		
+		
+		
+		List<WebElement> list= driver.findElements(By.xpath("//span[contains(text(),'Dallas, TX ')]"));
+	//	list.get(4).click();
+		System.out.println(list.size());
+		for(int i=0; i<list.size();i++) {
+			//String name = "SUNNYVALE, CA";
+			System.out.println(list.get(i).getText().toString());
+			String actualString =list.get(i).getText().toString();
+			Assert.assertTrue(actualString.contains("Dallas, TX"));
+		}
+		
+		
+//		WebElement house_found1 = driver.findElement(By.xpath("//span[contains(text(),'215 Red Oak Dr Unit B, SUNNYVALE, CA 94086')]"));
+//		Browser_utility.wait_for_Element(house_found1);		
+//		System.out.println(house_found1.isDisplayed());
+//		WebElement house_founs2 = driver.findElement(By.xpath("//span[contains(text(),'1271 Poplar Ave #404, SUNNYVALE, CA 94086')]"));
+//		Browser_utility.wait_for_Element(house_founs2);
+//		String actualHouse = house_founs2.getText();
+//		Assert.assertEquals(actualHouse, "1271 Poplar Ave #404, SUNNYVALE, CA 94086" );
+//		System.out.println(house_founs2.getText());
+//		Thread.sleep(2000);
+//		js.executeScript("scroll(0, 500)");
+//		WebElement house_3 = driver.findElement(By.xpath("//span[contains(text(),'1907 Magdalena Cir #42, SANTA CLARA, CA 95051')]"));
+//		Browser_utility.wait_for_Element(house_3);
+//		String house3 = house_3.getText();
+//		Assert.assertEquals(house3, "1907 Magdalena Cir #42, SANTA CLARA, CA 95051");
+//		System.out.println(house_3.isDisplayed());
+//		WebElement house_4 = driver.findElement(By.xpath("//span[contains(text(),'1269 Poplar Ave #309, Sunnyvale, CA 94086')]"));
+//		Browser_utility.wait_for_Element(house_4);
+//		String house4 = house_4.getText();
+//		Assert.assertEquals(house4, "1269 Poplar Ave #309, Sunnyvale, CA 94086");
+//		System.out.println(house_4.isDisplayed());
 		Thread.sleep(3000);
 		Test_Base.driver.quit();
 	}
